@@ -158,4 +158,27 @@ that expression would print numbers 0 - 99
 
 
 
+"""-------------- FUNCTIONS --------------"""
+
+"""
+functions are a way to organize code into reusable blocks that can take different inputs
+and accomplish a task or return an output
+
+they are defined using the def FUNCTIONNAME(): keyword and any arguments are placed into the parenthasis for reference inside the function
+"""
+
+def add_my_numbers(number_one, number_two):
+    new_number = number_one + number_two
+    return new_number
+
+function_result = add_my_numbers(5,5) #function result is now equal to 10
+
+
+"""
+these methods can be combined in order to produce processed data and much more
+"""
+
+
+
+
 
