@@ -165,6 +165,10 @@ functions are a way to organize code into reusable blocks that can take differen
 and accomplish a task or return an output
 
 they are defined using the def FUNCTIONNAME(): keyword and any arguments are placed into the parenthasis for reference inside the function
+
+there are many functions which come with the language such as print() input() and many more which allow you to
+put together a program without having to write your own logic for everything other functions such as int() str() and float() when passed a 
+piece of data will convert it to that data type
 """
 
 def add_my_numbers(number_one, number_two):
@@ -177,6 +181,41 @@ function_result = add_my_numbers(5,5) #function result is now equal to 10
 """
 these methods can be combined in order to produce processed data and much more
 """
+
+"""
+---------- EXAMPLE PROGRAM TO CONVERT F degrees to C ----------------
+"""
+
+def convert(deg_f):
+    deg_step1 = deg_f - 32
+    deg_step2 = deg_step1 * 5
+    deg_step3 = deg_step2 / 9
+    return deg_step3
+
+C_boiling_point_of_water = convert(212) #evaluates to 100 degrees C
+
+
+"""
+------------ EXAMPLE PROGRAM TO CHECK IF SOMEONE CAN BUY BOOZE ----------------------
+"""
+
+def can_buy_booze(person_age):
+    if person_age > 50:
+        print("you look mature as shit god damn i wont even card you")
+    elif person_age > 20 and person_age < 50:
+        print('I prob need to card you')
+    else:
+        print('GTFO child')
+
+
+can_buy_booze(12) #prints GTFO child
+can_buy_booze(25) #prints I prob need to card you
+can_buy_booze(75) #prints you look mature as shit god damn i wont even card you
+
+
+
+
+
 
 
 
