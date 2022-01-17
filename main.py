@@ -23,8 +23,16 @@ examples:
 """
 strings are any type of text data which is placed between two
 sets of quotes that store text data
+
 """
 my_string = "this is a string"
+
+"""
+
+using python version 3 we can format strings by placing a f before quotes and inserting and formatting values as shown
+"""
+
+my_string_formatted = f'{12.1500000:.2f}' #resolves to 12.15
 
 #numbers (integers, floats)
 """
